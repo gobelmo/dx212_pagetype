@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="MauiApp3.FlyoutPageDemo"
+            Title="FlyoutPageDemo">
+    <FlyoutPage.FlyoutLayoutBehavior>Default</FlyoutPage.FlyoutLayoutBehavior>
+    <FlyoutPage.Flyout>
+        <ContentPage Title="Flyout"
+                     BackgroundColor="#333333">
+            <Label Text="Flyout Content"
+                   TextColor="White"
+                   FontSize="32"
+                   VerticalTextAlignment="Center"/>
+        </ContentPage>
+    </FlyoutPage.Flyout>
+    <FlyoutPage.Detail>
+        <ContentPage Title="Flyout Detail"
+                     BackgroundColor="DeepPink">
+            <VerticalStackLayout BackgroundColor="LightBlue">
+
+                <Label Text="Flyout detail copntent"
+                       TextColor="White"
+                       FontSize="32"
+                       HorizontalTextAlignment="End"
+                       VerticalTextAlignment="Center"/>
+                <Button
+                    x:Name="NavigateBtn"
+                    Text="Go to TabbedPageDemo"
+                    Clicked="OnNavigateBtnClicked"
+                    HorizontalOptions="Fill"/>
+            </VerticalStackLayout>
+        </ContentPage>
+    </FlyoutPage.Detail>
+</FlyoutPage>

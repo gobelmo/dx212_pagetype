@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="MauiApp3.TabbedPageDemo"
+            Title="TabbedPageDemo"
+            BarBackgroundColor="DarkBlue"
+            BarTextColor="LightSalmon"
+            SelectedTabColor="DarkRed"
+            UnselectedTabColor="DarkKhaki">
+    <ContentPage Title="TAB 1"  >
+        <Label Text="Tab 1 Content"
+               FontSize="32"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center">
+        </Label>
+    </ContentPage>
+    <ContentPage Title="TAB 2" >
+        <Label Text="Tab 2 Content"
+               FontSize="32"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center">
+        </Label>
+    </ContentPage>
+    <ContentPage Title="TAB 3" >
+        <Label Text="Tab 3 Content"
+               FontSize="32"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center">
+        </Label>
+    </ContentPage>
+</TabbedPage>
